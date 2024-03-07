@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 
 const ToDoInput = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const [text, setText] = useState("");
+  const dispatch = useDispatch();
 
-export default ToDoInput
+  return (
+    <>
+      <form onSubmit={handleSubmit}>
+        <input type="text" />
+      </form>
+    </>
+  );
+};
+
+export default ToDoInput;
