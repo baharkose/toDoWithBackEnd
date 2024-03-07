@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import ToDoInput from "../components/ToDoInput";
+import TodoList from "../components/TodoList";
 
 const Home = () => {
   return (
     <div>
-      Home
+      <h2>TASK TRACKER</h2>
+      <ToDoInput />
+      <TodoList />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
